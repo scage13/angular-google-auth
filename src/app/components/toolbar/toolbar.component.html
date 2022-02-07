@@ -1,0 +1,21 @@
+<mat-toolbar color="primary">
+  <span>Google Auth App</span>
+
+  <a class="toolbar-action" routerLink="/auth" mat-button>Login</a>
+
+  <div *ngIf="!!(user$ | async)" class="toolbar-user">
+    <a class="toolbar-user__image" mat-icon-button [matMenuTriggerFor]="menu">
+      <img [src]="(user$ | async)?.image">
+    </a>
+    <mat-menu #menu="matMenu">
+      <button routerLink="/user-details" mat-menu-item>
+        <mat-icon>person</mat-icon>
+        <span>User Details</span>
+      </button>
+      <button mat-menu-item (click)="signOut()">
+        <mat-icon>logout-variant</mat-icon>
+        <span>Logout</span>
+      </button>
+    </mat-menu>
+  </div>
+</mat-toolbar>
