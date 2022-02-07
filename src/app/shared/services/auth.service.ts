@@ -51,7 +51,7 @@ export class AuthService {
       switchMap((gauth: GoogleAuthBase) => gauth.signOut()),
       tap(() => {
         this.vaultService.remove(STORAGE_PROFILE_KEY);
-        this.router.navigate(['/']);
+        this.router.navigate(['/auth']);
       }),
     );
   }

@@ -217,7 +217,7 @@ class AuthService {
     googleSignOut() {
         return this.auth2$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["switchMap"])((gauth) => gauth.signOut()), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["tap"])(() => {
             this.vaultService.remove(_consts_consts__WEBPACK_IMPORTED_MODULE_3__["STORAGE_PROFILE_KEY"]);
-            this.router.navigate(['/']);
+            this.router.navigate(['/auth']);
         }));
     }
 }
