@@ -197,11 +197,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 class AuthService {
-    constructor(vaultService, router) {
+    constructor(vaultService, router, ngZone) {
         this.vaultService = vaultService;
         this.router = router;
+        this.ngZone = ngZone;
         this.auth2 = new rxjs__WEBPACK_IMPORTED_MODULE_1__["BehaviorSubject"](null);
-        this.auth2$ = this.auth2.asObservable().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["filter"])(data => !!data));
+        this.auth2$ = this.auth2.asObservable();
     }
     initGAuth() {
         gapi.load('auth2', () => {
@@ -211,22 +212,22 @@ class AuthService {
     googleSignIn() {
         return this.auth2$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["switchMap"])((gauth) => gauth.signIn()), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(_utils_utils__WEBPACK_IMPORTED_MODULE_5__["mapUserResponse"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["tap"])((user) => {
             this.vaultService.set(_consts_consts__WEBPACK_IMPORTED_MODULE_3__["STORAGE_PROFILE_KEY"], user);
-            this.router.navigate(['/user-details']);
+            this.ngZone.run(() => this.router.navigate(['/user-details']));
         }));
     }
     googleSignOut() {
         return this.auth2$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["switchMap"])((gauth) => gauth.signOut()), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["tap"])(() => {
             this.vaultService.remove(_consts_consts__WEBPACK_IMPORTED_MODULE_3__["STORAGE_PROFILE_KEY"]);
-            this.router.navigate(['/auth']);
+            this.ngZone.run(() => this.router.navigate(['/auth']));
         }));
     }
 }
-AuthService.ɵfac = function AuthService_Factory(t) { return new (t || AuthService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_vault_service__WEBPACK_IMPORTED_MODULE_6__["VaultService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_router__WEBPACK_IMPORTED_MODULE_7__["Router"])); };
+AuthService.ɵfac = function AuthService_Factory(t) { return new (t || AuthService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_vault_service__WEBPACK_IMPORTED_MODULE_6__["VaultService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_router__WEBPACK_IMPORTED_MODULE_7__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"])); };
 AuthService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: AuthService, factory: AuthService.ɵfac, providedIn: 'root' });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AuthService, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
         args: [{ providedIn: 'root' }]
-    }], function () { return [{ type: _vault_service__WEBPACK_IMPORTED_MODULE_6__["VaultService"] }, { type: _angular_router__WEBPACK_IMPORTED_MODULE_7__["Router"] }]; }, null); })();
+    }], function () { return [{ type: _vault_service__WEBPACK_IMPORTED_MODULE_6__["VaultService"] }, { type: _angular_router__WEBPACK_IMPORTED_MODULE_7__["Router"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"] }]; }, null); })();
 
 
 /***/ }),
@@ -451,7 +452,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
         _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_11__["MatToolbarModule"],
         _angular_material_button__WEBPACK_IMPORTED_MODULE_12__["MatButtonModule"],
         _angular_material_icon__WEBPACK_IMPORTED_MODULE_13__["MatIconModule"],
-        _angular_material_menu__WEBPACK_IMPORTED_MODULE_14__["MatMenuModule"], _ngxs_store__WEBPACK_IMPORTED_MODULE_4__["ɵi"], _ngxs_devtools_plugin__WEBPACK_IMPORTED_MODULE_6__["NgxsReduxDevtoolsPluginModule"], _ngxs_logger_plugin__WEBPACK_IMPORTED_MODULE_5__["NgxsLoggerPluginModule"]] }); })();
+        _angular_material_menu__WEBPACK_IMPORTED_MODULE_14__["MatMenuModule"], _ngxs_store__WEBPACK_IMPORTED_MODULE_4__["ɵk"], _ngxs_devtools_plugin__WEBPACK_IMPORTED_MODULE_6__["NgxsReduxDevtoolsPluginModule"], _ngxs_logger_plugin__WEBPACK_IMPORTED_MODULE_5__["NgxsLoggerPluginModule"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{

@@ -37735,7 +37735,7 @@ function partition(predicate, thisArg) {
 /*!**********************************************************************!*\
   !*** ./node_modules/@ngxs/store/__ivy_ngcc__/fesm2015/ngxs-store.js ***!
   \**********************************************************************/
-/*! exports provided: Action, Actions, InitState, NGXS_PLUGINS, NgxsModule, NgxsSimpleChange, NoopNgxsExecutionStrategy, Select, Selector, SelectorOptions, State, StateStream, StateToken, Store, UpdateState, actionMatcher, createSelector, ensureSelectorMetadata, ensureStoreMetadata, getActionTypeFromInstance, getSelectorMetadata, getStoreMetadata, getValue, ofAction, ofActionCanceled, ofActionCompleted, ofActionDispatched, ofActionErrored, ofActionSuccessful, setValue, ɵa, ɵb, ɵc, ɵd, ɵe, ɵf, ɵg, ɵh, ɵi, ɵj, ɵk, ɵl, ɵm, ɵn, ɵo, ɵp, ɵr, ɵs, ɵt, ɵu, ɵv, ɵw, ɵx */
+/*! exports provided: Action, Actions, InitState, NGXS_PLUGINS, NgxsModule, NgxsSimpleChange, NoopNgxsExecutionStrategy, Select, Selector, SelectorOptions, State, StateStream, StateToken, Store, UpdateState, actionMatcher, createSelector, ensureSelectorMetadata, ensureStoreMetadata, getActionTypeFromInstance, getSelectorMetadata, getStoreMetadata, getValue, ofAction, ofActionCanceled, ofActionCompleted, ofActionDispatched, ofActionErrored, ofActionSuccessful, setValue, ɵa, ɵb, ɵba, ɵbb, ɵbc, ɵbd, ɵc, ɵd, ɵe, ɵf, ɵg, ɵh, ɵi, ɵj, ɵk, ɵl, ɵm, ɵn, ɵo, ɵp, ɵq, ɵr, ɵs, ɵt, ɵw, ɵx, ɵy, ɵz */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -37772,27 +37772,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setValue", function() { return setValue; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵa", function() { return OrderedSubject; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵb", function() { return InternalActions; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵba", function() { return SelectFactory; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵbb", function() { return LifecycleStateManager; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵbc", function() { return NgxsFeatureModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵbd", function() { return DispatchOutsideZoneNgxsExecutionStrategy; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵc", function() { return ROOT_STATE_TOKEN; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵd", function() { return FEATURE_STATE_TOKEN; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵe", function() { return SELECTOR_META_KEY; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵf", function() { return NgxsConfig; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵg", function() { return mergeDeep; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵh", function() { return NGXS_EXECUTION_STRATEGY; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵi", function() { return NgxsRootModule; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵj", function() { return StateFactory; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵk", function() { return InternalDispatchedActionResults; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵl", function() { return InternalDispatcher; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵm", function() { return StateContextFactory; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵn", function() { return InternalStateOperations; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵo", function() { return PluginManager; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵp", function() { return InternalNgxsExecutionStrategy; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵr", function() { return ensureStoreMetadata; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵs", function() { return getStoreMetadata; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵt", function() { return ensureSelectorMetadata; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵu", function() { return getSelectorMetadata; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵv", function() { return LifecycleStateManager; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵw", function() { return NgxsFeatureModule; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵx", function() { return DispatchOutsideZoneNgxsExecutionStrategy; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵe", function() { return NG_TEST_MODE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵf", function() { return NG_DEV_MODE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵg", function() { return SELECTOR_META_KEY; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵh", function() { return NgxsConfig; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵi", function() { return mergeDeep; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵj", function() { return NGXS_EXECUTION_STRATEGY; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵk", function() { return NgxsRootModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵl", function() { return StateFactory; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵm", function() { return InternalDispatchedActionResults; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵn", function() { return InternalDispatcher; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵo", function() { return StateContextFactory; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵp", function() { return InternalStateOperations; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵq", function() { return PluginManager; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵr", function() { return InternalNgxsExecutionStrategy; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵs", function() { return ConfigValidator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵt", function() { return HostEnvironment; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵw", function() { return ensureStoreMetadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵx", function() { return getStoreMetadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵy", function() { return ensureSelectorMetadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵz", function() { return getSelectorMetadata; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "8Y7J");
 /* harmony import */ var _ngxs_store_internals__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @ngxs/store/internals */ "z5Zb");
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "SVse");
@@ -37808,82 +37813,89 @@ __webpack_require__.r(__webpack_exports__);
  * @fileoverview added by tsickle
  * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-/**
- * @param {?} name
- * @return {?}
- */
+/** @enum {string} */
 
 
-function throwStateNameError(name) {
-    throw new Error(`${name} is not a valid state name. It needs to be a valid object property name.`);
-}
-/**
- * @return {?}
- */
-function throwStateNamePropertyError() {
-    throw new Error(`States must register a 'name' property.`);
-}
-/**
- * @param {?} current
- * @param {?} newName
- * @param {?} oldName
- * @return {?}
- */
-function throwStateUniqueError(current, newName, oldName) {
-    throw new Error(`State name '${current}' from ${newName} already exists in ${oldName}.`);
-}
-/**
- * @param {?} name
- * @return {?}
- */
-function throwStateDecoratorError(name) {
-    throw new Error(`States must be decorated with @State() decorator, but "${name}" isn't.`);
-}
-/**
- * @return {?}
- */
-function throwActionDecoratorError() {
-    throw new Error('@Action() decorator cannot be used with static methods.');
-}
-/**
- * @return {?}
- */
-function throwSelectorDecoratorError() {
-    throw new Error('Selectors only work on methods.');
-}
-/**
- * @return {?}
- */
-function getZoneWarningMessage() {
-    return ('Your application was bootstrapped with nooped zone and your execution strategy requires an actual NgZone!\n' +
+const VALIDATION_CODE = {
+    STATE_NAME: 'STATE_NAME',
+    STATE_UNIQUE: 'STATE_UNIQUE',
+    STATE_NAME_PROPERTY: 'STATE_NAME_PROPERTY',
+    STATE_DECORATOR: 'STATE_DECORATOR',
+    INCORRECT_PRODUCTION: 'INCORRECT_PRODUCTION',
+    INCORRECT_DEVELOPMENT: 'INCORRECT_DEVELOPMENT',
+    SELECT_FACTORY_NOT_CONNECTED: 'SELECT_FACTORY_NOT_CONNECTED',
+    ACTION_DECORATOR: 'ACTION_DECORATOR',
+    SELECTOR_DECORATOR: 'SELECTOR_DECORATOR',
+    ZONE_WARNING: 'ZONE_WARNING',
+    PATCHING_ARRAY: 'PATCHING_ARRAY',
+    PATCHING_PRIMITIVE: 'PATCHING_PRIMITIVE',
+    UNDECORATED_STATE_IN_IVY: 'UNDECORATED_STATE_IN_IVY',
+};
+/** @type {?} */
+const CONFIG_MESSAGES = {
+    [VALIDATION_CODE.STATE_NAME]: (/**
+     * @param {?} name
+     * @return {?}
+     */
+    (name) => `${name} is not a valid state name. It needs to be a valid object property name.`),
+    [VALIDATION_CODE.STATE_NAME_PROPERTY]: (/**
+     * @return {?}
+     */
+    () => `States must register a 'name' property`),
+    [VALIDATION_CODE.STATE_UNIQUE]: (/**
+     * @param {?} current
+     * @param {?} newName
+     * @param {?} oldName
+     * @return {?}
+     */
+    (current, newName, oldName) => `State name '${current}' from ${newName} already exists in ${oldName}`),
+    [VALIDATION_CODE.STATE_DECORATOR]: (/**
+     * @return {?}
+     */
+    () => 'States must be decorated with @State() decorator'),
+    [VALIDATION_CODE.INCORRECT_PRODUCTION]: (/**
+     * @return {?}
+     */
+    () => 'Angular is running in production mode but NGXS is still running in the development mode!\n' +
+        'Please set developmentMode to false on the NgxsModule options when in production mode.\n' +
+        'NgxsModule.forRoot(states, { developmentMode: !environment.production })'),
+    [VALIDATION_CODE.INCORRECT_DEVELOPMENT]: (/**
+     * @return {?}
+     */
+    () => 'RECOMMENDATION: Set developmentMode to true on the NgxsModule when Angular is running in development mode.\n' +
+        'NgxsModule.forRoot(states, { developmentMode: !environment.production })'),
+    [VALIDATION_CODE.SELECT_FACTORY_NOT_CONNECTED]: (/**
+     * @return {?}
+     */
+    () => 'You have forgotten to import the NGXS module!'),
+    [VALIDATION_CODE.ACTION_DECORATOR]: (/**
+     * @return {?}
+     */
+    () => '@Action() decorator cannot be used with static methods'),
+    [VALIDATION_CODE.SELECTOR_DECORATOR]: (/**
+     * @return {?}
+     */
+    () => 'Selectors only work on methods'),
+    [VALIDATION_CODE.ZONE_WARNING]: (/**
+     * @return {?}
+     */
+    () => 'Your application was bootstrapped with nooped zone and your execution strategy requires an actual NgZone!\n' +
         'Please set the value of the executionStrategy property to NoopNgxsExecutionStrategy.\n' +
-        'NgxsModule.forRoot(states, { executionStrategy: NoopNgxsExecutionStrategy })');
-}
-/**
- * @param {?} name
- * @return {?}
- */
-function getUndecoratedStateInIvyWarningMessage(name) {
-    return `'${name}' class should be decorated with @Injectable() right after the @State() decorator`;
-}
-/**
- * @return {?}
- */
-function throwSelectFactoryNotConnectedError() {
-    throw new Error('You have forgotten to import the NGXS module!');
-}
-/**
- * @return {?}
- */
-function throwPatchingArrayError() {
-    throw new Error('Patching arrays is not supported.');
-}
-/**
- * @return {?}
- */
-function throwPatchingPrimitiveError() {
-    throw new Error('Patching primitives is not supported.');
-}
+        'NgxsModule.forRoot(states, { executionStrategy: NoopNgxsExecutionStrategy })'),
+    [VALIDATION_CODE.PATCHING_ARRAY]: (/**
+     * @return {?}
+     */
+    () => 'Patching arrays is not supported.'),
+    [VALIDATION_CODE.PATCHING_PRIMITIVE]: (/**
+     * @return {?}
+     */
+    () => 'Patching primitives is not supported.'),
+    [VALIDATION_CODE.UNDECORATED_STATE_IN_IVY]: (/**
+     * @param {?} name
+     * @return {?}
+     */
+    (name) => `'${name}' class should be decorated with @Injectable() right after the @State() decorator`)
+};
 
 /**
  * @fileoverview added by tsickle
@@ -37897,11 +37909,7 @@ class DispatchOutsideZoneNgxsExecutionStrategy {
     constructor(_ngZone, _platformId) {
         this._ngZone = _ngZone;
         this._platformId = _platformId;
-        // Caretaker note: we have still left the `typeof` condition in order to avoid
-        // creating a breaking change for projects that still use the View Engine.
-        if (typeof ngDevMode === 'undefined' || ngDevMode) {
-            verifyZoneIsNotNooped(_ngZone);
-        }
+        this.verifyZoneIsNotNooped(this._ngZone);
     }
     /**
      * @template T
@@ -37946,6 +37954,20 @@ class DispatchOutsideZoneNgxsExecutionStrategy {
         }
         return func();
     }
+    /**
+     * @private
+     * @param {?} ngZone
+     * @return {?}
+     */
+    verifyZoneIsNotNooped(ngZone) {
+        // `NoopNgZone` is not exposed publicly as it doesn't expect
+        // to be used outside of the core Angular code, thus we just have
+        // to check if the zone doesn't extend or instanceof `NgZone`
+        if (ngZone instanceof _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"]) {
+            return;
+        }
+        console.warn(CONFIG_MESSAGES[VALIDATION_CODE.ZONE_WARNING]());
+    }
 }
 DispatchOutsideZoneNgxsExecutionStrategy.ɵfac = function DispatchOutsideZoneNgxsExecutionStrategy_Factory(t) { return new (t || DispatchOutsideZoneNgxsExecutionStrategy)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["PLATFORM_ID"])); };
 DispatchOutsideZoneNgxsExecutionStrategy.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: DispatchOutsideZoneNgxsExecutionStrategy, factory: DispatchOutsideZoneNgxsExecutionStrategy.ɵfac });
@@ -37961,21 +37983,6 @@ DispatchOutsideZoneNgxsExecutionStrategy.ctorParameters = () => [
                 args: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["PLATFORM_ID"]]
             }] }]; }, null); })();
 if (false) {}
-// Caretaker note: this should exist as a separate function and not a class method,
-// since class methods are not tree-shakable.
-/**
- * @param {?} ngZone
- * @return {?}
- */
-function verifyZoneIsNotNooped(ngZone) {
-    // `NoopNgZone` is not exposed publicly as it doesn't expect
-    // to be used outside of the core Angular code, thus we just have
-    // to check if the zone doesn't extend or instanceof `NgZone`.
-    if (ngZone instanceof _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"]) {
-        return;
-    }
-    console.warn(getZoneWarningMessage());
-}
 
 /**
  * @fileoverview added by tsickle
@@ -37987,6 +37994,10 @@ const ROOT_STATE_TOKEN = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injecti
 const FEATURE_STATE_TOKEN = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["InjectionToken"]('FEATURE_STATE_TOKEN');
 /** @type {?} */
 const NGXS_PLUGINS = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["InjectionToken"]('NGXS_PLUGINS');
+/** @type {?} */
+const NG_TEST_MODE = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["InjectionToken"]('NG_TEST_MODE');
+/** @type {?} */
+const NG_DEV_MODE = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["InjectionToken"]('NG_DEV_MODE');
 /** @type {?} */
 const META_KEY = 'NGXS_META';
 /** @type {?} */
@@ -38470,12 +38481,10 @@ function buildGraph(stateClasses) {
          * @return {?}
          */
         g => g === stateClass));
-        // Caretaker note: we have still left the `typeof` condition in order to avoid
-        // creating a breaking change for projects that still use the View Engine.
-        if ((typeof ngDevMode === 'undefined' || ngDevMode) && !meta) {
+        if (!meta) {
             throw new Error(`Child state not found: ${stateClass}. \r\nYou may have forgotten to add states to module`);
         }
-        return (/** @type {?} */ ((/** @type {?} */ ((/** @type {?} */ (meta))[META_KEY])).name));
+        return (/** @type {?} */ ((/** @type {?} */ (meta[META_KEY])).name));
     });
     return stateClasses.reduce((/**
      * @param {?} result
@@ -38605,9 +38614,7 @@ function topologicalSort(graph) {
          * @return {?}
          */
         (dep) => {
-            // Caretaker note: we have still left the `typeof` condition in order to avoid
-            // creating a breaking change for projects that still use the View Engine.
-            if ((typeof ngDevMode === 'undefined' || ngDevMode) && ancestors.indexOf(dep) >= 0) {
+            if (ancestors.indexOf(dep) >= 0) {
                 throw new Error(`Circular dependency '${dep}' is required by '${name}': ${ancestors.join(' -> ')}`);
             }
             if (visited[dep]) {
@@ -39009,6 +39016,8 @@ const ɵInternalActions_BaseFactory = /*@__PURE__*/ _angular_core__WEBPACK_IMPOR
  * You can listen to this in services to react without stores.
  */
 class Actions extends rxjs__WEBPACK_IMPORTED_MODULE_3__["Observable"] {
+    // This has to be `Observable<ActionContext>` in the v4. Because `InternalActions`
+    // is a `Subject<ActionContext>`. Leave it as `any` to avoid breaking changes
     /**
      * @param {?} internalActions$
      * @param {?} internalExecutionStrategy
@@ -39399,6 +39408,92 @@ const deepFreeze = (/**
  * @fileoverview added by tsickle
  * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+class HostEnvironment {
+    /**
+     * @param {?} isDevMode
+     * @param {?} isTestMode
+     */
+    constructor(isDevMode, isTestMode) {
+        this.isDevMode = isDevMode;
+        this.isTestMode = isTestMode;
+    }
+}
+HostEnvironment.ɵfac = function HostEnvironment_Factory(t) { return new (t || HostEnvironment)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](NG_DEV_MODE), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](NG_TEST_MODE)); };
+HostEnvironment.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: HostEnvironment, factory: HostEnvironment.ɵfac });
+/** @nocollapse */
+HostEnvironment.ctorParameters = () => [
+    { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"], args: [NG_DEV_MODE,] }] },
+    { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"], args: [NG_TEST_MODE,] }] }
+];
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](HostEnvironment, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"]
+    }], function () { return [{ type: undefined, decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"],
+                args: [NG_DEV_MODE]
+            }] }, { type: undefined, decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"],
+                args: [NG_TEST_MODE]
+            }] }]; }, null); })();
+if (false) {}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+class ConfigValidator {
+    /**
+     * @param {?} _host
+     * @param {?} _config
+     */
+    constructor(_host, _config) {
+        this._host = _host;
+        this._config = _config;
+    }
+    /**
+     * @private
+     * @return {?}
+     */
+    get isIncorrectProduction() {
+        return !this._host.isDevMode() && this._config.developmentMode;
+    }
+    /**
+     * @private
+     * @return {?}
+     */
+    get isIncorrectDevelopment() {
+        return this._host.isDevMode() && !this._config.developmentMode;
+    }
+    /**
+     * @return {?}
+     */
+    verifyDevMode() {
+        if (this._host.isTestMode()) {
+            return;
+        }
+        if (this.isIncorrectProduction) {
+            console.warn(CONFIG_MESSAGES[VALIDATION_CODE.INCORRECT_PRODUCTION]());
+        }
+        else if (this.isIncorrectDevelopment) {
+            console.warn(CONFIG_MESSAGES[VALIDATION_CODE.INCORRECT_DEVELOPMENT]());
+        }
+    }
+}
+ConfigValidator.ɵfac = function ConfigValidator_Factory(t) { return new (t || ConfigValidator)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](HostEnvironment), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](NgxsConfig)); };
+ConfigValidator.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: ConfigValidator, factory: ConfigValidator.ɵfac });
+/** @nocollapse */
+ConfigValidator.ctorParameters = () => [
+    { type: HostEnvironment },
+    { type: NgxsConfig }
+];
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ConfigValidator, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"]
+    }], function () { return [{ type: HostEnvironment }, { type: NgxsConfig }]; }, null); })();
+if (false) {}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * State Context factory class
  * @ignore
@@ -39408,11 +39503,13 @@ class InternalStateOperations {
      * @param {?} _stateStream
      * @param {?} _dispatcher
      * @param {?} _config
+     * @param {?} configValidator
      */
-    constructor(_stateStream, _dispatcher, _config) {
+    constructor(_stateStream, _dispatcher, _config, configValidator) {
         this._stateStream = _stateStream;
         this._dispatcher = _dispatcher;
         this._config = _config;
+        configValidator.verifyDevMode();
     }
     /**
      * Returns the root state operators.
@@ -39436,9 +39533,39 @@ class InternalStateOperations {
              */
             (actionOrActions) => this._dispatcher.dispatch(actionOrActions))
         };
-        return this._config.developmentMode
-            ? ensureStateAndActionsAreImmutable(rootStateOperations)
-            : rootStateOperations;
+        if (this._config.developmentMode) {
+            return this.ensureStateAndActionsAreImmutable(rootStateOperations);
+        }
+        return rootStateOperations;
+    }
+    /**
+     * @private
+     * @param {?} root
+     * @return {?}
+     */
+    ensureStateAndActionsAreImmutable(root) {
+        return {
+            getState: (/**
+             * @return {?}
+             */
+            () => root.getState()),
+            setState: (/**
+             * @param {?} value
+             * @return {?}
+             */
+            value => {
+                /** @type {?} */
+                const frozenValue = deepFreeze(value);
+                return root.setState(frozenValue);
+            }),
+            dispatch: (/**
+             * @param {?} actions
+             * @return {?}
+             */
+            actions => {
+                return root.dispatch(actions);
+            })
+        };
     }
     /**
      * @param {?} results
@@ -39454,47 +39581,19 @@ class InternalStateOperations {
         stateOperations.setState(Object.assign({}, currentState, results.defaults));
     }
 }
-InternalStateOperations.ɵfac = function InternalStateOperations_Factory(t) { return new (t || InternalStateOperations)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](StateStream), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](InternalDispatcher), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](NgxsConfig)); };
+InternalStateOperations.ɵfac = function InternalStateOperations_Factory(t) { return new (t || InternalStateOperations)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](StateStream), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](InternalDispatcher), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](NgxsConfig), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](ConfigValidator)); };
 InternalStateOperations.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: InternalStateOperations, factory: InternalStateOperations.ɵfac });
 /** @nocollapse */
 InternalStateOperations.ctorParameters = () => [
     { type: StateStream },
     { type: InternalDispatcher },
-    { type: NgxsConfig }
+    { type: NgxsConfig },
+    { type: ConfigValidator }
 ];
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](InternalStateOperations, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"]
-    }], function () { return [{ type: StateStream }, { type: InternalDispatcher }, { type: NgxsConfig }]; }, null); })();
+    }], function () { return [{ type: StateStream }, { type: InternalDispatcher }, { type: NgxsConfig }, { type: ConfigValidator }]; }, null); })();
 if (false) {}
-// We make it as a separate function and not the class method to tree-shake it in the future.
-/**
- * @param {?} root
- * @return {?}
- */
-function ensureStateAndActionsAreImmutable(root) {
-    return {
-        getState: (/**
-         * @return {?}
-         */
-        () => root.getState()),
-        setState: (/**
-         * @param {?} value
-         * @return {?}
-         */
-        value => {
-            /** @type {?} */
-            const frozenValue = deepFreeze(value);
-            return root.setState(frozenValue);
-        }),
-        dispatch: (/**
-         * @param {?} actions
-         * @return {?}
-         */
-        actions => {
-            return root.dispatch(actions);
-        })
-    };
-}
 
 /**
  * @fileoverview added by tsickle
@@ -39512,10 +39611,10 @@ function simplePatch(val) {
      */
     (existingState) => {
         if (Array.isArray(val)) {
-            throwPatchingArrayError();
+            throw new Error(CONFIG_MESSAGES[VALIDATION_CODE.PATCHING_ARRAY]());
         }
         else if (typeof val !== 'object') {
-            throwPatchingPrimitiveError();
+            throw new Error(CONFIG_MESSAGES[VALIDATION_CODE.PATCHING_PRIMITIVE]());
         }
         /** @type {?} */
         const newState = Object.assign({}, ((/** @type {?} */ (existingState))));
@@ -39669,41 +39768,49 @@ class StoreValidators {
      * @param {?} name
      * @return {?}
      */
-    static checkThatStateIsNamedCorrectly(name) {
+    static stateNameErrorMessage(name) {
+        return CONFIG_MESSAGES[VALIDATION_CODE.STATE_NAME](name);
+    }
+    /**
+     * @param {?} name
+     * @return {?}
+     */
+    static checkCorrectStateName(name) {
         if (!name) {
-            throwStateNamePropertyError();
+            throw new Error(CONFIG_MESSAGES[VALIDATION_CODE.STATE_NAME_PROPERTY]());
         }
-        else if (!this.stateNameRegex.test(name)) {
-            throwStateNameError(name);
+        if (!this.stateNameRegex.test(name)) {
+            throw new Error(this.stateNameErrorMessage(name));
         }
     }
     /**
-     * @param {?} stateName
      * @param {?} state
      * @param {?} statesByName
      * @return {?}
      */
-    static checkThatStateNameIsUnique(stateName, state, statesByName) {
+    static checkStateNameIsUnique(state, statesByName) {
+        /** @type {?} */
+        const meta = this.getValidStateMeta(state);
+        /** @type {?} */
+        const stateName = (/** @type {?} */ ((/** @type {?} */ (meta)).name));
         /** @type {?} */
         const existingState = statesByName[stateName];
         if (existingState && existingState !== state) {
-            throwStateUniqueError(stateName, state.name, existingState.name);
+            throw new Error(CONFIG_MESSAGES[VALIDATION_CODE.STATE_UNIQUE](stateName, state.name, existingState.name));
         }
+        return stateName;
     }
     /**
-     * @param {?} stateClasses
+     * @param {?} state
      * @return {?}
      */
-    static checkThatStateClassesHaveBeenDecorated(stateClasses) {
-        stateClasses.forEach((/**
-         * @param {?} stateClass
-         * @return {?}
-         */
-        (stateClass) => {
-            if (!getStoreMetadata(stateClass)) {
-                throwStateDecoratorError(stateClass.name);
-            }
-        }));
+    static getValidStateMeta(state) {
+        /** @type {?} */
+        const meta = getStoreMetadata(state);
+        if (!meta) {
+            throw new Error(CONFIG_MESSAGES[VALIDATION_CODE.STATE_DECORATOR]());
+        }
+        return meta;
     }
 }
 StoreValidators.stateNameRegex = new RegExp('^[a-zA-Z0-9_]+$');
@@ -39835,6 +39942,14 @@ class StateFactory {
         return value;
     }
     /**
+     * @private
+     * @param {?} stateClasses
+     * @return {?}
+     */
+    static checkStatesAreValid(stateClasses) {
+        stateClasses.forEach(StoreValidators.getValidStateMeta);
+    }
+    /**
      * @return {?}
      */
     ngOnDestroy() {
@@ -39850,11 +39965,7 @@ class StateFactory {
      * @return {?}
      */
     add(stateClasses) {
-        // Caretaker note: we have still left the `typeof` condition in order to avoid
-        // creating a breaking change for projects that still use the View Engine.
-        if (typeof ngDevMode === 'undefined' || ngDevMode) {
-            StoreValidators.checkThatStateClassesHaveBeenDecorated(stateClasses);
-        }
+        StateFactory.checkStatesAreValid(stateClasses);
         const { newStates } = this.addToStatesMap(stateClasses);
         if (!newStates.length)
             return [];
@@ -39921,30 +40032,23 @@ class StateFactory {
     connectActionHandlers() {
         if (this._actionsSubscription !== null)
             return;
-        /** @type {?} */
-        const dispatched$ = new rxjs__WEBPACK_IMPORTED_MODULE_3__["Subject"]();
         this._actionsSubscription = this._actions
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["filter"])((/**
          * @param {?} ctx
          * @return {?}
          */
         (ctx) => ctx.status === "DISPATCHED" /* Dispatched */)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["mergeMap"])((/**
-         * @param {?} ctx
+         * @param {?} __0
          * @return {?}
          */
-        ctx => {
-            dispatched$.next(ctx);
-            /** @type {?} */
-            const action = ctx.action;
-            return this.invokeActions(dispatched$, (/** @type {?} */ (action))).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])((/**
-             * @return {?}
-             */
-            () => (/** @type {?} */ ({ action, status: "SUCCESSFUL" /* Successful */ })))), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["defaultIfEmpty"])((/** @type {?} */ ({ action, status: "CANCELED" /* Canceled */ }))), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])((/**
-             * @param {?} error
-             * @return {?}
-             */
-            error => Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])((/** @type {?} */ ({ action, status: "ERRORED" /* Errored */, error }))))));
-        })))
+        ({ action }) => this.invokeActions(this._actions, (/** @type {?} */ (action))).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])((/**
+         * @return {?}
+         */
+        () => (/** @type {?} */ ({ action, status: "SUCCESSFUL" /* Successful */ })))), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["defaultIfEmpty"])((/** @type {?} */ ({ action, status: "CANCELED" /* Canceled */ }))), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])((/**
+         * @param {?} error
+         * @return {?}
+         */
+        error => Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])((/** @type {?} */ ({ action, status: "ERRORED" /* Errored */, error })))))))))
             .subscribe((/**
          * @param {?} ctx
          * @return {?}
@@ -39953,11 +40057,11 @@ class StateFactory {
     }
     /**
      * Invoke actions on the states.
-     * @param {?} dispatched$
+     * @param {?} actions$
      * @param {?} action
      * @return {?}
      */
-    invokeActions(dispatched$, action) {
+    invokeActions(actions$, action) {
         /** @type {?} */
         const type = (/** @type {?} */ (getActionTypeFromInstance(action)));
         /** @type {?} */
@@ -39984,22 +40088,10 @@ class StateFactory {
                             // `handler(ctx) { return EMPTY; }`
                             // then the action will be canceled.
                             // See https://github.com/ngxs/store/issues/1568
-                            result = result.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["mergeMap"])((/**
-                             * @param {?} value
-                             * @return {?}
-                             */
-                            (value) => {
-                                if (value instanceof Promise) {
-                                    return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["from"])(value);
-                                }
-                                if (value instanceof rxjs__WEBPACK_IMPORTED_MODULE_3__["Observable"]) {
-                                    return value;
-                                }
-                                return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(value);
-                            })), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["defaultIfEmpty"])({}));
+                            result = result.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["defaultIfEmpty"])({}));
                             if (actionMeta.options.cancelUncompleted) {
                                 // todo: ofActionDispatched should be used with action class
-                                result = result.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["takeUntil"])(dispatched$.pipe(ofActionDispatched((/** @type {?} */ (action))))));
+                                result = result.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["takeUntil"])(actions$.pipe(ofActionDispatched((/** @type {?} */ (action))))));
                             }
                         }
                         else {
@@ -40030,12 +40122,7 @@ class StateFactory {
         const statesMap = this.statesByName;
         for (const stateClass of stateClasses) {
             /** @type {?} */
-            const stateName = (/** @type {?} */ (getStoreMetadata(stateClass).name));
-            // Caretaker note: we have still left the `typeof` condition in order to avoid
-            // creating a breaking change for projects that still use the View Engine.
-            if (typeof ngDevMode === 'undefined' || ngDevMode) {
-                StoreValidators.checkThatStateNameIsUnique(stateName, stateClass, statesMap);
-            }
+            const stateName = StoreValidators.checkStateNameIsUnique(stateClass, statesMap);
             /** @type {?} */
             const unmountedState = !statesMap[stateName];
             if (unmountedState) {
@@ -40563,8 +40650,9 @@ if (false) {}
  * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
- * Allows the select decorator to get access to the DI store, this is used internally
- * in `\@Select` decorator.
+ * Allows the select decorator to get access to the DI store.
+ * \@internal only use in \@Select decorator
+ * @ignore
  */
 class SelectFactory {
     /**
@@ -40584,7 +40672,7 @@ class SelectFactory {
     }
 }
 SelectFactory.ɵfac = function SelectFactory_Factory(t) { return new (t || SelectFactory)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](Store), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](NgxsConfig)); };
-SelectFactory.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: SelectFactory, factory: SelectFactory.ɵfac, providedIn: 'root' });
+SelectFactory.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: SelectFactory, factory: SelectFactory.ɵfac });
 SelectFactory.store = null;
 SelectFactory.config = null;
 /** @nocollapse */
@@ -40592,10 +40680,8 @@ SelectFactory.ctorParameters = () => [
     { type: Store },
     { type: NgxsConfig }
 ];
-/** @nocollapse */ SelectFactory.ngInjectableDef = Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["defineInjectable"])({ factory: function SelectFactory_Factory() { return new SelectFactory(Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["inject"])(Store), Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["inject"])(NgxsConfig)); }, token: SelectFactory, providedIn: "root" });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](SelectFactory, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
-        args: [{ providedIn: 'root' }]
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"]
     }], function () { return [{ type: Store }, { type: NgxsConfig }]; }, null); })();
 if (false) {}
 
@@ -40639,6 +40725,44 @@ if (false) {}
  * @fileoverview added by tsickle
  * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/** @type {?} */
+const ivyEnabledInDevMode$ = new rxjs__WEBPACK_IMPORTED_MODULE_3__["ReplaySubject"](1);
+/**
+ * Ivy exposes helper functions to the global `window.ng` object.
+ * Those functions are `getComponent, getContext,
+ * getListeners, getViewComponent, getHostElement, getInjector,
+ * getRootComponents, getDirectives, getDebugNode`
+ * Previously, old view engine exposed `window.ng.coreTokens` and
+ * `window.ng.probe` if an application was in development/production.
+ * Ivy doesn't expose these functions in production. Developers will be able
+ * to see warnings in both JIT/AOT modes, but only if an application
+ * is in development.
+ * @return {?}
+ */
+function setIvyEnabledInDevMode() {
+    try {
+        // `try-catch` will also handle server-side rendering, as
+        // `window is not defined` will not be thrown.
+        /** @type {?} */
+        const ng = ((/** @type {?} */ (window))).ng;
+        /** @type {?} */
+        const _viewEngineEnabled = !!ng.probe && !!ng.coreTokens;
+        /** @type {?} */
+        const _ivyEnabledInDevMode = !_viewEngineEnabled && Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["isDevMode"])();
+        ivyEnabledInDevMode$.next(_ivyEnabledInDevMode);
+    }
+    catch (_a) {
+        ivyEnabledInDevMode$.next(false);
+    }
+    finally {
+        ivyEnabledInDevMode$.complete();
+    }
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * Root module
  * @ignore
@@ -40648,14 +40772,13 @@ class NgxsRootModule {
      * @param {?} factory
      * @param {?} internalStateOperations
      * @param {?} _store
-     * @param {?} injector
+     * @param {?} _select
      * @param {?=} states
      * @param {?=} lifecycleStateManager
      */
-    constructor(factory, internalStateOperations, _store, injector, states = [], lifecycleStateManager) {
-        // If the user is running View Engine then we create the `SelectFactory` instance,
-        // otherwise it'll be tree-shaken away in Ivy.
-        !_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵivyEnabled"] && injector.get(SelectFactory);
+    constructor(factory, internalStateOperations, _store, _select, states = [], lifecycleStateManager) {
+        // Validate states on having the `@Injectable()` decorator in Ivy
+        setIvyEnabledInDevMode();
         // Add stores to the state graph and return their defaults
         /** @type {?} */
         const results = factory.addAndReturnDefaults(states);
@@ -40667,19 +40790,19 @@ class NgxsRootModule {
     }
 }
 NgxsRootModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NgxsRootModule });
-NgxsRootModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NgxsRootModule_Factory(t) { return new (t || NgxsRootModule)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](StateFactory), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](InternalStateOperations), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](Store), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](ROOT_STATE_TOKEN, 8), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](LifecycleStateManager)); } });
+NgxsRootModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NgxsRootModule_Factory(t) { return new (t || NgxsRootModule)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](StateFactory), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](InternalStateOperations), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](Store), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](SelectFactory), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](ROOT_STATE_TOKEN, 8), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](LifecycleStateManager)); } });
 /** @nocollapse */
 NgxsRootModule.ctorParameters = () => [
     { type: StateFactory },
     { type: InternalStateOperations },
     { type: Store },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"] },
+    { type: SelectFactory },
     { type: Array, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"], args: [ROOT_STATE_TOKEN,] }] },
     { type: LifecycleStateManager }
 ];
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NgxsRootModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"]
-    }], function () { return [{ type: StateFactory }, { type: InternalStateOperations }, { type: Store }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"] }, { type: Array, decorators: [{
+    }], function () { return [{ type: StateFactory }, { type: InternalStateOperations }, { type: Store }, { type: SelectFactory }, { type: Array, decorators: [{
                 type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Optional"]
             }, {
                 type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"],
@@ -40772,6 +40895,8 @@ class NgxsModule {
                 Actions,
                 InternalActions,
                 _ngxs_store_internals__WEBPACK_IMPORTED_MODULE_1__["NgxsBootstrapper"],
+                ConfigValidator,
+                HostEnvironment,
                 LifecycleStateManager,
                 InternalDispatcher,
                 InternalDispatchedActionResults,
@@ -40779,6 +40904,7 @@ class NgxsModule {
                 InternalNgxsExecutionStrategy,
                 Store,
                 StateStream,
+                SelectFactory,
                 PluginManager,
                 ...states,
                 ...NgxsModule.ngxsTokenProviders(states, options)
@@ -40813,6 +40939,14 @@ class NgxsModule {
      */
     static ngxsTokenProviders(states, options) {
         return [
+            {
+                provide: NG_TEST_MODE,
+                useValue: _ngxs_store_internals__WEBPACK_IMPORTED_MODULE_1__["isAngularInTestMode"]
+            },
+            {
+                provide: NG_DEV_MODE,
+                useValue: _angular_core__WEBPACK_IMPORTED_MODULE_0__["isDevMode"]
+            },
             {
                 provide: NGXS_EXECUTION_STRATEGY,
                 useClass: options.executionStrategy || DispatchOutsideZoneNgxsExecutionStrategy
@@ -40902,14 +41036,10 @@ function Action(actions, options) {
      * @return {?}
      */
     (target, name) => {
-        // Caretaker note: we have still left the `typeof` condition in order to avoid
-        // creating a breaking change for projects that still use the View Engine.
-        if (typeof ngDevMode === 'undefined' || ngDevMode) {
-            /** @type {?} */
-            const isStaticMethod = target.hasOwnProperty('prototype');
-            if (isStaticMethod) {
-                throwActionDecoratorError();
-            }
+        /** @type {?} */
+        const isStaticMethod = target.hasOwnProperty('prototype');
+        if (isStaticMethod) {
+            throw new Error(CONFIG_MESSAGES[VALIDATION_CODE.ACTION_DECORATOR]());
         }
         /** @type {?} */
         const meta = ensureStoreMetadata(target.constructor);
@@ -40947,14 +41077,20 @@ function ensureStateClassIsInjectable(target) {
     // AOT mode because this property is added before runtime. If an application is running in
     // JIT mode then this property can be added by the `@Injectable()` decorator. The `@Injectable()`
     // decorator has to go after the `@State()` decorator, thus we prevent users from unwanted DI errors.
-    if (_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵivyEnabled"]) {
-        /** @type {?} */
-        /** @nocollapse */ const ngInjectableDef = target.ɵprov;
-        if (!ngInjectableDef) {
-            // Don't warn if Ivy is disabled or `ɵprov` exists on the class
-            console.warn(getUndecoratedStateInIvyWarningMessage(target.name));
+    ivyEnabledInDevMode$.subscribe((/**
+     * @param {?} _ivyEnabledInDevMode
+     * @return {?}
+     */
+    _ivyEnabledInDevMode => {
+        if (_ivyEnabledInDevMode) {
+            /** @type {?} */
+            /** @nocollapse */ const ngInjectableDef = target.ɵprov;
+            if (!ngInjectableDef) {
+                // Don't warn if Ivy is disabled or `ɵprov` exists on the class
+                console.warn(CONFIG_MESSAGES[VALIDATION_CODE.UNDECORATED_STATE_IN_IVY](target.name));
+            }
         }
-    }
+    }));
 }
 
 /**
@@ -40992,11 +41128,7 @@ function State(options) {
         const { children, defaults, name } = optionsWithInheritance;
         /** @type {?} */
         const stateName = typeof name === 'string' ? name : (name && name.getName()) || null;
-        // Caretaker note: we have still left the `typeof` condition in order to avoid
-        // creating a breaking change for projects that still use the View Engine.
-        if (typeof ngDevMode === 'undefined' || ngDevMode) {
-            StoreValidators.checkThatStateIsNamedCorrectly(stateName);
-        }
+        StoreValidators.checkCorrectStateName(stateName);
         if (inheritedStateClass.hasOwnProperty(META_KEY)) {
             /** @type {?} */
             const inheritedMeta = inheritedStateClass[META_KEY] || {};
@@ -41011,11 +41143,7 @@ function State(options) {
      * @return {?}
      */
     (target) => {
-        // Caretaker note: we have still left the `typeof` condition in order to avoid
-        // creating a breaking change for projects that still use the View Engine.
-        if (typeof ngDevMode === 'undefined' || ngDevMode) {
-            ensureStateClassIsInjectable(target);
-        }
+        ensureStateClassIsInjectable(target);
         /** @type {?} */
         const stateClass = target;
         /** @type {?} */
@@ -41038,37 +41166,30 @@ const DOLLAR_CHAR_CODE = 36;
 /**
  * @template T
  * @param {?} selector
- * @param {?} store
  * @return {?}
  */
-function createSelectObservable(selector, store) {
-    // We're doing this stuff to tree-shake the `SelectFactory` when the user
-    // is running Ivy since NGXS will select the state from the provided `store` argument.
-    return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵivyEnabled"]
-        ? createSelectObservableIvy(selector, store)
-        : createSelectObservableViewEngine(selector);
+function createSelectObservable(selector) {
+    if (!SelectFactory.store) {
+        throw new Error(CONFIG_MESSAGES[VALIDATION_CODE.SELECT_FACTORY_NOT_CONNECTED]());
+    }
+    return SelectFactory.store.select(selector);
 }
 /**
- * @param {?} config
  * @param {?} name
  * @param {?=} rawSelector
  * @param {?=} paths
  * @return {?}
  */
-function createSelectorFn(config, name, rawSelector, paths = []) {
-    rawSelector = rawSelector || removeDollarAtTheEnd(name);
-    if (typeof rawSelector !== 'string') {
-        return rawSelector;
-    }
-    else {
+function createSelectorFn(name, rawSelector, paths = []) {
+    rawSelector = !rawSelector ? removeDollarAtTheEnd(name) : rawSelector;
+    if (typeof rawSelector === 'string') {
         /** @type {?} */
         const propsArray = paths.length
             ? [rawSelector, ...paths]
             : rawSelector.split('.');
-        return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵivyEnabled"]
-            ? createSelectorFnIvy(propsArray, config)
-            : createSelectorFnViewEngine(propsArray);
+        return propGetter(propsArray, (/** @type {?} */ (SelectFactory.config)));
     }
+    return rawSelector;
 }
 /**
  * \@example If `foo$` => make it just `foo`
@@ -41081,42 +41202,6 @@ function removeDollarAtTheEnd(name) {
     /** @type {?} */
     const dollarAtTheEnd = name.charCodeAt(lastCharIndex) === DOLLAR_CHAR_CODE;
     return dollarAtTheEnd ? name.slice(0, lastCharIndex) : name;
-}
-/**
- * @template T
- * @param {?} selector
- * @param {?} store
- * @return {?}
- */
-function createSelectObservableIvy(selector, store) {
-    return ngDevMode && !store ? throwSelectFactoryNotConnectedError() : (/** @type {?} */ (store)).select(selector);
-}
-/**
- * @template T
- * @param {?} selector
- * @return {?}
- */
-function createSelectObservableViewEngine(selector) {
-    return SelectFactory.store
-        ? SelectFactory.store.select(selector)
-        : throwSelectFactoryNotConnectedError();
-}
-/**
- * @param {?} propsArray
- * @param {?} config
- * @return {?}
- */
-function createSelectorFnIvy(propsArray, config) {
-    return ngDevMode && !config
-        ? throwSelectFactoryNotConnectedError()
-        : propGetter(propsArray, (/** @type {?} */ (config)));
-}
-/**
- * @param {?} propsArray
- * @return {?}
- */
-function createSelectorFnViewEngine(propsArray) {
-    return propGetter(propsArray, (/** @type {?} */ (SelectFactory.config)));
 }
 
 /**
@@ -41142,12 +41227,7 @@ function Select(rawSelector, ...paths) {
         /** @type {?} */
         const selectorId = `__${name}__selector`;
         /** @type {?} */
-        let selector = null;
-        /** @type {?} */
-        let injectorNotifier$ = null;
-        if (_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵivyEnabled"]) {
-            injectorNotifier$ = Object(_ngxs_store_internals__WEBPACK_IMPORTED_MODULE_1__["ensureInjectorNotifierIsCaptured"])(target);
-        }
+        const selector = createSelectorFn(name, rawSelector, paths);
         Object.defineProperties(target, {
             [selectorId]: {
                 writable: true,
@@ -41161,36 +41241,10 @@ function Select(rawSelector, ...paths) {
                  * @return {?}
                  */
                 get() {
-                    if (this[selectorId]) {
-                        return this[selectorId];
-                    }
-                    // The `localInject` will be tree-shaken away in apps that
-                    // still use the View Engine.
-                    if (_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵivyEnabled"]) {
-                        this[selectorId] = (/** @type {?} */ (injectorNotifier$)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["mergeMap"])((/**
-                         * @return {?}
-                         */
-                        () => {
-                            /** @type {?} */
-                            const store = Object(_ngxs_store_internals__WEBPACK_IMPORTED_MODULE_1__["localInject"])(this, Store);
-                            /** @type {?} */
-                            const config = Object(_ngxs_store_internals__WEBPACK_IMPORTED_MODULE_1__["localInject"])(this, NgxsConfig);
-                            selector = selector || createSelectorFn(config, name, rawSelector, paths);
-                            return createSelectObservable(selector, store);
-                        })));
-                    }
-                    else {
-                        selector = selector || createSelectorFn(null, name, rawSelector, paths);
-                        this[selectorId] = createSelectObservable(selector, null);
-                    }
-                    return this[selectorId];
+                    return this[selectorId] || (this[selectorId] = createSelectObservable(selector));
                 }
             }
         });
-        // Keep this `if` guard here so the below stuff will be tree-shaken away in apps that still use the View Engine.
-        if (_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵivyEnabled"]) {
-            Object(_ngxs_store_internals__WEBPACK_IMPORTED_MODULE_1__["ensureLocalInjectorCaptured"])(target);
-        }
     });
 }
 
@@ -41289,14 +41343,10 @@ function Selector(selectors) {
      * @return {?}
      */
     (target, key, descriptor) => {
-        // Caretaker note: we have still left the `typeof` condition in order to avoid
-        // creating a breaking change for projects that still use the View Engine.
-        if (typeof ngDevMode === 'undefined' || ngDevMode) {
-            /** @type {?} */
-            const isNotMethod = !(descriptor && descriptor.value !== null);
-            if (isNotMethod) {
-                throwSelectorDecoratorError();
-            }
+        /** @type {?} */
+        const isNotMethod = !(descriptor && descriptor.value !== null);
+        if (isNotMethod) {
+            throw new Error(CONFIG_MESSAGES[VALIDATION_CODE.SELECTOR_DECORATOR]());
         }
         /** @type {?} */
         const originalFn = descriptor.value;
@@ -84639,7 +84689,7 @@ class NgxsReduxDevtoolsPlugin {
             (/** @type {?} */ (this.devtoolsExtension)).init(state);
         }
         else {
-            (/** @type {?} */ (this.devtoolsExtension)).send(Object.assign({}, action, { action: null, type }), newState);
+            (/** @type {?} */ (this.devtoolsExtension)).send(Object.assign({}, action, { type }), newState);
         }
     }
     /**
@@ -84976,7 +85026,7 @@ function isScheduler(value) {
 /*!********************************************************************************!*\
   !*** ./node_modules/@ngxs/store/__ivy_ngcc__/fesm2015/ngxs-store-internals.js ***!
   \********************************************************************************/
-/*! exports provided: INITIAL_STATE_TOKEN, InitialState, NGXS_STATE_CONTEXT_FACTORY, NGXS_STATE_FACTORY, NgxsBootstrapper, ensureInjectorNotifierIsCaptured, ensureLocalInjectorCaptured, isAngularInTestMode, localInject, memoize */
+/*! exports provided: INITIAL_STATE_TOKEN, InitialState, NGXS_STATE_CONTEXT_FACTORY, NGXS_STATE_FACTORY, NgxsBootstrapper, isAngularInTestMode, memoize */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -84986,10 +85036,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NGXS_STATE_CONTEXT_FACTORY", function() { return NGXS_STATE_CONTEXT_FACTORY; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NGXS_STATE_FACTORY", function() { return NGXS_STATE_FACTORY; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgxsBootstrapper", function() { return NgxsBootstrapper; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ensureInjectorNotifierIsCaptured", function() { return ensureInjectorNotifierIsCaptured; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ensureLocalInjectorCaptured", function() { return ensureLocalInjectorCaptured; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isAngularInTestMode", function() { return isAngularInTestMode; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "localInject", function() { return localInject; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "memoize", function() { return memoize; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "8Y7J");
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "qCKp");
@@ -85103,13 +85150,7 @@ function _isAngularInTestMode() {
     return isInTestMode;
 }
 /** @type {?} */
-const isAngularInTestMode = 
-// Caretaker note: we have still left the `typeof` condition in order to avoid
-// creating a breaking change for projects that still use the View Engine.
-typeof ngDevMode === 'undefined' || ngDevMode ? memoize(_isAngularInTestMode) : (/**
- * @return {?}
- */
-() => false);
+const isAngularInTestMode = memoize(_isAngularInTestMode);
 
 /**
  * @fileoverview added by tsickle
@@ -85186,186 +85227,6 @@ const NGXS_STATE_CONTEXT_FACTORY = new _angular_core__WEBPACK_IMPORTED_MODULE_0_
  * @type {?}
  */
 const NGXS_STATE_FACTORY = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["InjectionToken"]('Internals.StateFactory');
-
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-// Angular doesn't export `NG_FACTORY_DEF`.
-/** @type {?} */
-const NG_FACTORY_DEF = 'ɵfac';
-// A `Symbol` which is used to save the `Injector` onto the class instance.
-/** @type {?} */
-const InjectorInstance = Symbol('InjectorInstance');
-// A `Symbol` which is used to determine if factory has been decorated previously or not.
-/** @type {?} */
-const FactoryHasBeenDecorated = Symbol('FactoryHasBeenDecorated');
-// A `Symbol` which is used to save the notifier on the class instance. The `InjectorInstance` cannot
-// be retrieved within the `constructor` since it's set after the `factory()` is called.
-/** @type {?} */
-const InjectorNotifier = Symbol('InjectorNotifier');
-/**
- * @record
- */
-function PrototypeWithInjectorNotifier() { }
-if (false) {}
-/**
- * @param {?} target
- * @return {?}
- */
-function ensureInjectorNotifierIsCaptured(target) {
-    if (target[InjectorNotifier]) {
-        return (/** @type {?} */ (target[InjectorNotifier]));
-    }
-    else {
-        /** @type {?} */
-        const injectorNotifier$ = new rxjs__WEBPACK_IMPORTED_MODULE_1__["ReplaySubject"](1);
-        Object.defineProperty(target, InjectorNotifier, {
-            get: (/**
-             * @return {?}
-             */
-            () => injectorNotifier$)
-        });
-        return injectorNotifier$;
-    }
-}
-// eslint-disable-next-line @typescript-eslint/ban-types
-/**
- * @param {?} target
- * @return {?}
- */
-function ensureLocalInjectorCaptured(target) {
-    if (FactoryHasBeenDecorated in target.constructor.prototype) {
-        return;
-    }
-    /** @type {?} */
-    const constructor = target.constructor;
-    // Means we're in AOT mode.
-    if (typeof constructor[NG_FACTORY_DEF] === 'function') {
-        decorateFactory(constructor);
-    }
-    else if (ngDevMode) {
-        // We're running in JIT mode and that means we're not able to get the compiled definition
-        // on the class inside the property decorator during the current message loop tick. We have
-        // to wait for the next message loop tick. Note that this is safe since this Promise will be
-        // resolved even before the `APP_INITIALIZER` is resolved.
-        // The below code also will be executed only in development mode, since it's never recommended
-        // to use the JIT compiler in production mode (by setting "aot: false").
-        decorateFactoryLater(constructor);
-    }
-    target.constructor.prototype[FactoryHasBeenDecorated] = true;
-}
-/**
- * @template T
- * @param {?} instance
- * @param {?} token
- * @return {?}
- */
-function localInject(instance, token) {
-    /** @type {?} */
-    const injector = instance[InjectorInstance];
-    return injector ? injector.get(token) : null;
-}
-/**
- * @param {?} constructor
- * @return {?}
- */
-function decorateFactory(constructor) {
-    /** @type {?} */
-    const factory = constructor[NG_FACTORY_DEF];
-    if (typeof factory !== 'function') {
-        return;
-    }
-    // Let's try to get any definition.
-    // Caretaker note: this will be compatible only with Angular 9+, since Angular 9 is the first
-    // Ivy-stable version. Previously definition properties were named differently (e.g. `ngComponentDef`).
-    /** @type {?} */
-    const def = constructor.ɵprov || constructor.ɵpipe || constructor.ɵcmp || constructor.ɵdir;
-    /** @type {?} */
-    const decoratedFactory = (/**
-     * @return {?}
-     */
-    () => {
-        /** @type {?} */
-        const instance = factory();
-        // Caretaker note: `inject()` won't work here.
-        // We can use the `directiveInject` only during the component
-        // construction, since Angular captures the currently active injector.
-        // We're not able to use this function inside the getter (when the `selectorId` property is
-        // requested for the first time), since the currently active injector will be null.
-        instance[InjectorInstance] = Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"])(
-        // We're using `INJECTOR` token except of the `Injector` class since the compiler
-        // throws: `Cannot assign an abstract constructor type to a non-abstract constructor type.`.
-        // Caretaker note: that this is the same way of getting the injector.
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["INJECTOR"]);
-        // Caretaker note: the notifier will be available only if consumers call the `ensureInjectorNotifierIsCaptured()`.
-        /** @type {?} */
-        const injectorNotifier$ = instance[InjectorNotifier];
-        if (injectorNotifier$) {
-            injectorNotifier$.next(true);
-            injectorNotifier$.complete();
-        }
-        return instance;
-    });
-    // If we've found any definition then it's enough to override the `def.factory` since Angular
-    // code uses the `def.factory` and then fallbacks to `ɵfac`.
-    if (def) {
-        def.factory = decoratedFactory;
-    }
-    // `@NgModule()` doesn't doesn't have definition factory, also providers have definitions but Angular
-    // still uses the `ɵfac`.
-    Object.defineProperty(constructor, NG_FACTORY_DEF, {
-        get: (/**
-         * @return {?}
-         */
-        () => decoratedFactory)
-    });
-}
-/**
- * @param {?} constructor
- * @return {?}
- */
-function decorateFactoryLater(constructor) {
-    // This function actually will be tree-shaken away when building for production since it's guarded with `ngDevMode`.
-    // We're having the `try-catch` here because of the `SyncTestZoneSpec`, which throws
-    // an error when micro or macrotask is used within a synchronous test. E.g. `Cannot call
-    // Promise.then from within a sync test`.
-    try {
-        Promise.resolve().then((/**
-         * @return {?}
-         */
-        () => {
-            decorateFactory(constructor);
-        }));
-    }
-    catch (_a) {
-        // This is kind of a "hack", but we try to be backwards-compatible,
-        // tho this `catch` block will only be executed when tests are run with Jasmine or Jest.
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵglobal"].process &&
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵglobal"].process.nextTick &&
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵglobal"].process.nextTick((/**
-             * @return {?}
-             */
-            () => {
-                decorateFactory(constructor);
-            }));
-    }
-}
-/**
- * @record
- */
-function Definition() { }
-if (false) {}
-/**
- * @record
- */
-function ConstructorWithDefinitionAndFactory() { }
-if (false) {}
-/**
- * @record
- */
-function PrivateInstance() { }
-if (false) {}
 
 /**
  * @fileoverview added by tsickle

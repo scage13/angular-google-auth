@@ -1,7 +1,7 @@
-import { Injectable } from '@angular/core';
+import { Injectable, NgZone } from '@angular/core';
 import { Router } from '@angular/router';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { filter, map, switchMap, tap } from 'rxjs/operators';
+import { map, switchMap, tap } from 'rxjs/operators';
 
 import { GoogleAuthBase, User } from '../types/auth.type';
 
@@ -18,13 +18,12 @@ import { VaultService } from './vault.service';
 @Injectable({ providedIn: 'root' })
 export class AuthService {
   private auth2 = new BehaviorSubject<GoogleAuthBase | null>(null);
-  auth2$ = this.auth2.asObservable().pipe(
-    filter(data => !!data),
-  );
+  auth2$ = this.auth2.asObservable();
 
   constructor(
     private vaultService: VaultService,
     private router: Router,
+    private ngZone: NgZone,
   ) {}
 
   initGAuth(): void {
@@ -41,7 +40,9 @@ export class AuthService {
       map(mapUserResponse),
       tap((user: User) => {
         this.vaultService.set(STORAGE_PROFILE_KEY, user);
-        this.router.navigate(['/user-details']);
+        this.ngZone.run(
+          () => this.router.navigate(['/user-details']),
+        );
       }),
     );
   }
@@ -51,7 +52,9 @@ export class AuthService {
       switchMap((gauth: GoogleAuthBase) => gauth.signOut()),
       tap(() => {
         this.vaultService.remove(STORAGE_PROFILE_KEY);
-        this.router.navigate(['/auth']);
+        this.ngZone.run(
+          () => this.router.navigate(['/auth']),
+        );
       }),
     );
   }
