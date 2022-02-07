@@ -27,7 +27,7 @@ export class AuthGuard implements CanActivate, CanLoad {
           const isExpired = user?.authData?.expires_at < Date.now();
 
           if (!user) {
-            this.router.navigate(['/auth']);
+            this.router.navigate(['/']);
             return of(false);
           }
 
