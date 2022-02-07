@@ -306,7 +306,7 @@ class AuthGuard {
             var _a;
             const isExpired = ((_a = user === null || user === void 0 ? void 0 : user.authData) === null || _a === void 0 ? void 0 : _a.expires_at) < Date.now();
             if (!user) {
-                this.router.navigate(['/']);
+                this.router.navigate(['/auth']);
                 return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(false);
             }
             if (isExpired) {
